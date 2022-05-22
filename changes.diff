@@ -1,6 +1,6 @@
---- OnDamage.java.old	2022-05-22 19:05:52.699643104 +0200
-+++ src/main/java/dev/bleepo/customhitdelay/listeners/OnDamage.java	2022-05-22 19:06:03.483643105 +0200
-@@ -18,9 +18,6 @@
+--- a/src/main/java/dev/bleepo/customhitdelay/listeners/OnDamage.java
++++ b/src/main/java/dev/bleepo/customhitdelay/listeners/OnDamage.java
+@@ -18,9 +18,6 @@ public class OnDamage implements Listener, ConfigManager {
              if (e.getEntity() instanceof Monster || e.getEntity() instanceof Animals) {
                  player.setMaximumNoDamageTicks(plugin.getConfig().getInt("default-ticks"));
              }

@@ -18,6 +18,9 @@ public class OnDamage implements Listener, ConfigManager {
             if (e.getEntity() instanceof Monster || e.getEntity() instanceof Animals) {
                 player.setMaximumNoDamageTicks(plugin.getConfig().getInt("default-ticks"));
             }
+        } else {
+            Player player = (Player) e.getDamager();
+            player.setMaximumNoDamageTicks(plugin.getConfig().getInt("default-ticks"));
         }
     }
 }
